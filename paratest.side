@@ -1,0 +1,86 @@
+{
+  "id": "9104cba7-e7fa-4227-bc29-b3c718d4ef51",
+  "version": "2.0",
+  "name": "paratest",
+  "url": "https://parabank.parasoft.com",
+  "tests": [{
+    "id": "4b8fe950-fcaa-4c93-a30e-9381930b3c57",
+    "name": "Untitled",
+    "commands": [{
+      "id": "f3097e70-a816-452b-bcca-f0fe94805f9a",
+      "comment": "",
+      "command": "open",
+      "target": "/parabank/index.htm",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffbcfdcf-9d54-4f1c-8a68-16b444bb1710",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "992x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea7d57cd-994d-4c1c-b00b-6fc0fb11e70d",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.login:nth-child(2) > .input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginPanel']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "john"
+    }, {
+      "id": "4151bba5-89ce-4d86-b8f4-5923ba9cc6a0",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.login:nth-child(4) > .input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginPanel']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed0518e5-8b02-48fc-bdda-620890b8bd2b",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.login:nth-child(4) > .input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginPanel']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "demo"
+    }, {
+      "id": "bb03131e-d8c2-40cf-b37a-7b8312d6896a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(1)",
+      "targets": [
+        ["css=.button:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Log In']", "xpath:attributes"],
+        ["xpath=//div[@id='loginPanel']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9e6f0bca-1425-40eb-8983-0238ee799803",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4b8fe950-fcaa-4c93-a30e-9381930b3c57"]
+  }],
+  "urls": ["https://parabank.parasoft.com/"],
+  "plugins": []
+}
