@@ -1,0 +1,11 @@
+
+For this task, I used GitHub Copilot to generate a Python function that sorts a list of dictionaries by a specific key. The AI-suggested implementation utilized Python’s built-in `sorted()` function with a lambda to access dictionary values. I then created a manual version using a bubble sort algorithm for comparison.
+
+The AI-generated function was concise, readable, and efficient. It leveraged optimized C-level code within Python’s standard library, resulting in a time complexity of **O(n log n)**. It also safely handled missing keys using `dict.get()`, making it more robust and production-ready.
+
+In contrast, the manual implementation was significantly longer and used nested loops with **O(n²)** time complexity. While it helped reinforce core sorting logic, it’s inefficient for real-world applications and harder to maintain.
+
+In practical scenarios, especially with large datasets or performance-critical applications, the AI-suggested function is clearly superior. It also allowed for quick iteration and reduced coding time. GitHub Copilot proved valuable in generating clean, idiomatic code quickly, while my manual implementation deepened my understanding of sorting mechanics.
+
+In conclusion, the AI approach is better for performance, reliability, and development speed, while manual implementation is educational.
+
